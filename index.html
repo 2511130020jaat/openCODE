@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de desarrollador web - proyectos, habilidades y contacto">
+  <title>JHON | Desarrollador Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="#inicio" class="logo">&lt;dev<span class="logo-accent">/</span>&gt;</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menú" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting">Hola, mi nombre es</p>
+          <h1 class="hero-title">JHON ARIAS</h1>
+          <h2 class="hero-role">Desarrollador <span class="typewriter" id="typewriter"></span></h2>
+          <p class="hero-description">
+            Creo aplicaciones y sitios web modernos, enfocándome en experiencias
+            de usuario limpias y código de calidad.
+          </p>
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-outline">Contáctame</a>
+          </div>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <a href="#sobre-mi" class="scroll-down" aria-label="Bajar"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <section id="sobre-mi" class="section about">
+      <div class="container">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="jhonarias.png" alt="Foto de perfil">
+          </div>
+          <div class="about-content">
+            <p>
+              Soy un desarrollador apasionado por crear soluciones digitales
+              que resuelven problemas reales. Me especializo en construir
+              aplicaciones web con <strong>HTML5</strong>, <strong>CSS3</strong> y <strong>JavaScript</strong>.
+            </p>
+            <p>
+              Me encanta aprender nuevas tecnologías y colaborar en proyectos
+              desafiantes que me permitan crecer profesionalmente.
+            </p>
+            <ul class="about-details">
+              <li><i class="fas fa-map-pin"></i> Ciudad, País</li>
+              <li><i class="fas fa-briefcase"></i> Desarrollador Freelance</li>
+              <li><i class="fas fa-graduation-cap"></i> Ingeniería en Sistemas</li>
+              <li><i class="fas fa-envelope"></i> correo@ejemplo.com</li>
+            </ul>
+            <a href="cv.pdf" class="btn btn-primary" download><i class="fas fa-file-arrow-down"></i> Descargar CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Proyectos</h2>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-img">
+              <img src="https://via.placeholder.com/600x400/0ea5e9/0f172a?text=Proyecto+1" alt="Proyecto 1">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">E-commerce</h3>
+              <p class="project-desc">Tienda online con carrito de compras, filtros y pasarela de pago simulada.</p>
+              <div class="project-tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver código"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img">
+              <img src="https://via.placeholder.com/600x400/8b5cf6/0f172a?text=Proyecto+2" alt="Proyecto 2">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">App de Tareas</h3>
+              <p class="project-desc">Gestor de tareas con localStorage, filtros por estado y modo oscuro.</p>
+              <div class="project-tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver código"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img">
+              <img src="https://via.placeholder.com/600x400/22c55e/0f172a?text=Proyecto+3" alt="Proyecto 3">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Dashboard Analytics</h3>
+              <p class="project-desc">Panel de control con gráficos interactivos y exportación de datos.</p>
+              <div class="project-tags">
+                <span>JavaScript</span><span>Chart.js</span><span>API REST</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver código"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="skills-grid">
+
+          <div class="skill-item reveal" data-skill="95">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-html5"></i> HTML5</span>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
+          </div>
+
+          <div class="skill-item reveal" data-skill="90">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-css3-alt"></i> CSS3</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+          </div>
+
+          <div class="skill-item reveal" data-skill="85">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+          </div>
+
+          <div class="skill-item reveal" data-skill="80">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-react"></i> React</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+          </div>
+
+          <div class="skill-item reveal" data-skill="75">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-node-js"></i> Node.js</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+          </div>
+
+          <div class="skill-item reveal" data-skill="70">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fas fa-database"></i> MongoDB</span>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+          </div>
+
+          <div class="skill-item reveal" data-skill="85">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-git-alt"></i> Git / GitHub</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+          </div>
+
+          <div class="skill-item reveal" data-skill="90">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fas fa-mobile-alt"></i> Diseño Responsive</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>¿Tienes un proyecto en mente?</h3>
+            <p>Estoy disponible para proyectos freelance y oportunidades laborales. No dudes en escribirme.</p>
+            <ul>
+              <li><i class="fas fa-envelope"></i> correo@ejemplo.com</li>
+              <li><i class="fas fa-phone"></i> +00 000 000 000</li>
+              <li><i class="fas fa-map-pin"></i> Ciudad, País</li>
+            </ul>
+            <div class="contact-social">
+              <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Tu Nombre. Hecho con <i class="fas fa-heart"></i> HTML5, CSS3 y JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
